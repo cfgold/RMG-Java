@@ -1,0 +1,27 @@
+//Library.txt
+//	version 1.0
+
+//This file contains PrIMe-recommended thermochemistry data as of 01-Jul-2009 16:47:18
+//All data was converted from NASA-7 polynomial format (unless otherwise noted)
+//All uncertainty values were assigned values of 0.0
+
+//Name	Hf298	S298	Cp300	Cp400	Cp500	Cp600	Cp800	Cp1000	Cp1500	dH	dS	dCp	Notes
+
+//Units
+//H: kcal/mol
+//S and Cp: cal/mol/K
+
+C3H7-1	24.21	69.41	17.12	21.14	24.95	28.33	33.53	37.59	43.91	0.0	0.0	0.0	!Burcat
+CH2OH	-4.06	58.35	11.35	12.79	14.16	15.36	17.08	18.44	20.59	0.0	0.0	0.0	!Burcat
+C2H5	28.60	58.06	12.16	14.64	17.12	19.39	22.96	25.79	30.17	0.0	0.0	0.0	!Burcat
+C2H5O-1	-5.70	69.70	16.47	19.38	22.06	24.40	27.94	30.70	35.00	0.0	0.0	0.0	!Burcat
+C3H7O-N1	-14.78	80.95	19.36	23.88	27.91	31.46	37.33	41.75	48.23	0.0	0.0	0.0	!From Curran, from THERM
+!C3H7O-N1	-11.38 103.84	21.59	26.40	30.76	34.47	40.29	44.64	51.51	0.0	0.0	0.0	!CBS-QB3 calculations, by MRH
+CH3	35.06	46.36	9.20	9.98	10.75	11.50	12.86	14.09	16.25	0.0	0.0	0.0	!Burcat
+OH	8.91	43.91	7.14	7.07	7.05	7.06	7.15	7.34	7.88	0.0	0.0	0.0	!Burcat
+C4H9-1	19.55	73.51	22.70	28.36	33.69	38.39	45.59	51.13	59.62	0.0	0.0	0.0	!Burcat
+HCO	10.11	53.59	8.29	8.75	9.29	9.84	10.85	11.66	12.94	0.0	0.0	0.0	!Burcat
+CH2CHO	6.00	64.02	13.18	15.15	16.96	18.60	21.30	23.34	26.35	0.0	0.0	0.0	!Burcat
+C2H4O	-29.80	69.30	14.64	17.72	20.50	22.86	26.31	28.91	32.82	0.0	0.0	0.0	!Burcat
+//C4H8O	-49.27	78.22	22.94	28.79	34.36	39.29	46.74	52.23	60.11	0.0	0.0	0.0	!Burcat
+

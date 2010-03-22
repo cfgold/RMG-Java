@@ -1,0 +1,68 @@
+// CFG
+
+
+Unit:
+A: molecule/cm3/s
+E: Kelvin
+
+Reactions: 
+propane = H + ipropyl  0 0 0  0 0 0
+propane = H + npropyl  0 0 0  0 0 0 
+
+
+// o2 + n-propyl
+O2 + npropyl = npropylperoxy	5.1E-13	0.0	-1131.	0	0	0	
+O2 + npropyl = QOOH_2		4.1E-17	0.0	538.	0	0	0	
+O2 + npropyl = QOOH_1		4.9E-14	0.0	1586.	0	0	0	
+O2 + npropyl = propene + HO2	7.5E-13	0.0	2888.	0	0	0	
+O2 + npropyl = propoxide + OH	1.9E-14	0.0	3053.	0	0	0
+
+
+// o2 + i-propyl
+O2 + ipropyl = ipropylperoxy	5.2E-12	0.0	-717.	0	0	0	
+O2 + ipropyl = QOOH_3		2.3E-15	0.0	1907.	0	0	0	
+O2 + ipropyl = propene + HO2	1.7E-11	0.0	3647.	0	0	0	
+O2 + ipropyl = propoxide + OH	5.8E-13	0.0	5058.	0	0	0
+
+// n-propylperoxy decomp
+npropylperoxy = npropyl + O2	1.3E14	0.0	15385.	0	0	0
+npropylperoxy = QOOH_2		1.1E9	0.0	13438.	0	0	0
+npropylperoxy = QOOH_1		1.2E10	0.0	11406.	0	0	0
+npropylperoxy = propene + HO2   6.2E11	0.0	14701.	0	0	0
+npropylperoxy = propoxide + OH	1.7E10	0.0	15167.	0	0	0
+
+// QOOH_2 decomp
+QOOH_2 = npropylperoxy		1.1E9	0.0	10559.	0	0	0
+QOOH_2 = O2 + npropyl		2.4E7	0.0	6079.	0	0	0	
+QOOH_2 = QOOH_1			1.6E6	0.0	9249.	0	0	0	
+QOOH_2 = propene + HO2		1.1E8	0.0	15364.	0	0	0	
+QOOH_2 = propoxide + OH		1.3E6	0.0	14880.	0	0	0	
+
+
+// QOOH_1 decomp
+QOOH_1 = npropylperoxy		1.1E12	0.0	10016.	0	0	0	
+QOOH_1 = QOOH_2			8.3E8	0.0	3213.	0	0	0	
+QOOH_1 = O2 + npropyl		2.9E6	0.0	8099.	0	0	0
+QOOH_1 = propene + HO2		8.8E9	0.0	9804	0	0	0	
+QOOH_1 = propoxide + OH		2.6E8	0.0	10119.	0	0	0
+
+
+// ipropylperoxy decomp
+ipropylperoxy = O2 + ipropyl	1.1E15	0.0	17839.	0	0	0	
+ipropylperoxy =	QOOH_3		1.2E10	0.0	15362.	0	0	0	
+ipropylperoxy = propene + HO2	2.9E12	0.0	15182.	0	0	0
+ipropylperoxy = propoxide + OH	2.4E11	0.0	18190.	0	0	0
+
+// QOOH_3 decomp
+QOOH_3 = ipropylperoxy		6.0E10	0.0	11666.	0	0	0
+QOOH_3 = O2 + ipropyl		5.6E8	0.0	6088.	0	0	0
+QOOH_3 = propene + HO2		6.3E11	0.0	7709.	0	0	0	
+QOOH_3 = propoxide + OH		2.8E11	0.0	5599.	0	0	0
+
+// begin QOOH + O2 section
+
+// R + HO2 reactions
+allyl + HO2 = OH + allyloxy  1.5E-11 0.0 384.41 0	0	0
+npropyl + HO2 = OH + npropoxy  1.5E-11 0.0  384.41  0.0 0.0 0.0
+ipropyl + HO2 = OH + ipropoxy  1.5E-11 0.0  384.41  0.0 0.0 0.0
+

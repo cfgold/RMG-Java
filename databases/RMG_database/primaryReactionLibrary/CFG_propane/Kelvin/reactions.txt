@@ -1,0 +1,29 @@
+// CFG
+
+
+Unit:
+A: molecule/cm3/s
+E: Kelvin
+
+Reactions: 
+// C3H5O2 decomposition rates
+frag_1 = vinoxy + formaldehyde  	7.4E12	0.4	3218.	0  	0	0
+//frag_3 = methyl + glyoxal 		7.4E13  0.5 	5172.	0	0	0
+frag_3 = HCO + acetaldehyde		3.1E14	-0.4	731.	0	0	0	
+frag_2 = acetyl + formaldehyde		1.6E14	-0.3	2416.	0	0	0
+
+// OH + propane
+OH + propane = npropyl + H2O		3.9E-13	2.0	1048.	0	0	0
+
+// c3h6o2 decomposition rates
+prod_1 = OH + frag_1			3.8E15	0.0	23502.	0	0	0	
+prod_5 = OH + frag_3			3.2E15	0.0	21444.	0	0	0	
+prod_4 = OH + frag_2			1.5E16	0.0	25574.	0	0	0
+	
+
+allylhydroperoxide = OH + allyloxy 	1.0E15  0.0	 20030.	0	0	0
+
+
+
+
+

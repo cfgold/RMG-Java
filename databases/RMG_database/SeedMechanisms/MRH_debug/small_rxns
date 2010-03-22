@@ -1,0 +1,16 @@
+// CFG
+
+
+Unit:
+//A: molecule/cm3/s
+//E: Kelvin
+A: mol/cm3/s
+E: KJ/mol
+
+Reactions: 
+// C3H5O2 decomposition rates
+allyl + HO2 = O2 + propene	1.2E10  0.0 0.0    0.0  0.0  0.0
+allyl + HO2 = prod_2   2.1E11	0.0	0.0	0	0	0
+//allyl + HO2 = OH + allyloxy 4.0E11 0.0 0.0 0	0	0
+
+

@@ -1,0 +1,39 @@
+// CFG rates taken from NIST
+
+
+Unit:
+A: molecule/cm3/s
+E: kcal/mol
+
+Reactions: 
+// propyl radical beta scission
+methyl + ethene = npropyl	5.89E-15	0.71	7.42	0.0	0.0	0.0  
+H + propene = npropyl		6.74E-12	0.15	3.07	0.0	0.0	0.0  
+H + propene = ipropyl		1.87E-11	0.03	1.59	0.0	0.0	0.0  
+
+
+// OH + propane
+OH + propane = H2O + npropyl	1.82E-11	0.0	2.38	0.0	0.0	0.0	
+OH + propane = H2O + ipropyl	7.02E-12	0.0	1.20	0.0	0.0	0.0	
+
+// O + propane
+O + propane = OH + npropyl 2.68e-18	2.45	4.70	0.0	0.0	0.0  
+O + propane = OH + ipropyl 6.95e-19	2.48	2.76	0.0	0.0	0.0
+
+
+// H + propane
+H + propane = H2 + npropyl 4.15e-18	2.44	6.77	0.0	0.0	0.0
+H + propane = H2 + ipropyl 4.70e-18	2.23	4.19	0.0	0.0	0.0
+
+// CH2 + propane
+CH2 + propane = methyl + npropyl 1.5e-24 3.65	7.15	0.0	0.0	0.0	
+CH2 + propane = methyl + ipropyl 2.5e-24 3.46	7.47	0.0	0.0	0.0
+
+
+//H + O2 = HO2  1E-20 0.0 10.0 0.0 0.0 0.0
+
+
+
+
+
+

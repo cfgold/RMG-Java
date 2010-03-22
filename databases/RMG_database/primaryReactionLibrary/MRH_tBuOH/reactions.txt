@@ -1,0 +1,31 @@
+// small molecule oxidation library, reaction file, version 2, JS, August 6, 2003 
+// originally from Leeds methane oxidation mechanism v1.5
+// http://www.chem.leeds.ac.uk/Combustion/Combustion.html
+// fix bug for O2 + HCO = HO2 + CO 1.52E13 0.00 -7.09, change E into positive, change A into 5.12E13 according to NIST
+
+
+Unit:
+A: mol/cm3/s
+E: kcal/mol
+
+Reactions: 
+//tBuOH = iC4H8 + H2O			2.21E+09	1.42	64.85	0.0	0.0	0.0
+tBuOH = iC4H8 + H2O	1.52E+06	2.26	62.42	0.0	0.0	0.0
+
+tBuOH + H = H2 + HOC[CH2][CH3]2		7.86E+06	2.30	 9.43	0.0	0.0	0.0
+tBuOH + H = H2 + OC[CH3]3		9.59E+04	2.56	10.71	0.0	0.0	0.0
+
+tBuOH + CH3 = CH4 + HOC[CH2][CH3]2	6.32E+01	3.50	11.97	0.0	0.0	0.0
+tBuOH + CH3 = CH4 + OC[CH3]3		7.99E-01	3.73	 8.80	0.0	0.0	0.0
+
+//tBuOH = CH3 + HOC[CH3]2			6.31E+16	0.0	81.26	0.0	0.0	0.0
+//CH3 + HOC[CH3]2 = tBuOH			0.815E+13	0.0	0.596	0.0	0.0	0.0
+//OH + tC4H9 = tBuOH			2.84E+13	-0.15	0.292	0.0	0.0	0.0
+//OH + tC4H9 = tBuOH			0.82E+13	-0.15	0.31	0.0	0.0	0.0
+
+//CH3 + HOC[CH3]2 = tBuOH	2E+13	0.0	0.0	0.0	0.0	0.0
+//OH + tC4H9 = tBuOH	2E+13	0.0	0.0	0.0	0.0	0.0
+
+// 21Feb2010
+CH3 + HOC[CH3]2 = tBuOH	0.4075E+13	0.0	0.596	0.0	0.0	0.0
+OH + tC4H9 = tBuOH	0.4100E+13	-0.15	0.31	0.0	0.0	0.0

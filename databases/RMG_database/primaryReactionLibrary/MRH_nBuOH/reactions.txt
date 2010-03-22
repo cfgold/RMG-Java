@@ -1,0 +1,30 @@
+// small molecule oxidation library, reaction file, version 2, JS, August 6, 2003 
+// originally from Leeds methane oxidation mechanism v1.5
+// http://www.chem.leeds.ac.uk/Combustion/Combustion.html
+// fix bug for O2 + HCO = HO2 + CO 1.52E13 0.00 -7.09, change E into positive, change A into 5.12E13 according to NIST
+
+
+Unit:
+A: mol/cm3/s
+E: cal/mol
+
+Reactions: 
+// part with CO
+nC4H10O = C4H8-1 + H2O	7.04e+08	1.32	68430	0	0	0	
+//CH3 + C3H7O-N1 = nC4H10O	8.00e+12	0.00	0.00	0	0	0
+//C2H5 + C2H5O-1 = nC4H10O	6.00e+12	0.00	0.00	0	0	0
+//C3H7-1 + CH2OH = nC4H10O	1.00e+13	0.00	0.00	0	0	0
+//C3H7-1 + CH2OH = nC4H10O	7.00e+12	0.00	0.00	0	0	0
+
+CH3 + C3H7O-N1 = nC4H10O	2.5e+12	0.00	0.00	0	0	0
+C2H5 + C2H5O-1 = nC4H10O	5e+12	0.00	0.00	0	0	0
+C3H7-1 + CH2OH = nC4H10O	5e+12	0.00	0.00	0	0	0
+C4H9-1 + OH = nC4H10O		7.7e+13	0.00	0.00	0	0	0
+
+//CH3 + C3H7O-N1 = nC4H10O	1e+13	0.00	0.00	0	0	0
+//C2H5 + C2H5O-1 = nC4H10O	2e+13	0.00	0.00	0	0	0
+//C3H7-1 + CH2OH = nC4H10O	2e+13	0.00	0.00	0	0	0
+
+//Originally, n=2.44
+C2H5+C2H4O=C4H9O-1	1990.0	2.24	5370.0	0	0	0
+

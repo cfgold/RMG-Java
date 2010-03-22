@@ -1,0 +1,36 @@
+// small molecule oxidation library, third body reaction file, version 2, JS, August 6, 2003
+// originally from Leeds methane oxidation mechanism v1.5
+// http://www.chem.leeds.ac.uk/Combustion/Combustion.html
+
+//reduced by cfg
+
+Unit:
+A: mol/cm3/s
+E: kJ/mol
+
+Reactions:
+
+  formaldehyde  + M                =    HCO    + H   + M   1.40E36    -5.54   404.58	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/6.5/ CH4/3.0/ C2H6/3.0/ AR/0.35/
+
+  formaldehyde  + M                =    H2     + CO  + M   3.26E36    -5.54   404.58	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/6.5/ CH4/3.0/ C2H6/3.0/ AR/0.35/
+
+HCO   + M                =    H      + CO  + M    4.49E14   0.00    65.93	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/6.5/ CH4/3.0/ C2H6/3.0/ AR/0.35/
+
+O2     + H     + M       =    HO2   + M          2.10E18    -0.8    0.00	*1.2	0	0
+N2/0.67/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/0.0/ CH4/3.0/ C2H6/3.0/ AR/0.29/
+
+ethene  + M                =    vinyl   + H   + M   7.40E17     0.00    404.09	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/6.5/ CH4/3.0/ C2H6/3.0/ AR/0.35/
+
+H      + H     + M       =    H2      + M        1.87E18    -1.00    0.00	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/6.5/ CH4/3.0/ H2/0.0/ C2H6/3.0/ AR/0.35/
+
+ 
+H      + OH    + M       =    H2O    + M          5.53E+22   -2.0    0.00	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/2.55/ CH4/3.0/ C2H6/3.0/ AR/0.15/
+
+methoxy  + M                =    formaldehyde   + H   + M   1.55E14     0.00     56.46	*1.2	0	0
+N2/0.4/ O2/0.4/ CO/0.75/ CO2/1.5/ H2O/6.5/ CH4/3.0/ C2H6/3.0/ AR/0.35/

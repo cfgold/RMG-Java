@@ -1,0 +1,42 @@
+// small molecule oxidation library, reaction file, version 2, JS, August 6, 2003 
+// originally from Leeds methane oxidation mechanism v1.5
+// http://www.chem.leeds.ac.uk/Combustion/Combustion.html
+// fix bug for O2 + HCO = HO2 + CO 1.52E13 0.00 -7.09, change E into positive, change A into 5.12E13 according to NIST
+
+
+Unit:
+A: mol/cm3/s
+E: kcal/mol
+
+Reactions: 
+//sBuOH = C4H8-1 + H2O		2.18E08	1.56	64.55	0.0	0.0	0.0
+//sBuOH = C4H8-2 + H2O		3.88E08	1.451	65.7505	0.0	0.0	0.0
+// with T^n
+//sBuOH = C4H8-1 + H2O		3.63E+04	2.54	61.39	0.0	0.0	0.0
+//sBuOH = C4H8-2 + H2O		3.72E+05	2.26	62.94	0.0	0.0	0.0
+// without T^n
+sBuOH = C4H8-1 + H2O	2.46E+13	0.0	66.56	0.0	0.0	0.0
+sBuOH = C4H8-2 + H2O	2.81E+13	0.0	67.56	0.0	0.0	0.0
+
+sBuOH + H = H2 + CH2CH2CH[OH]CH3	6.13e+05	2.50	 8.58	0.0	0.0	0.0
+sBuOH + H = H2 + CH3CHCH[OH]CH3		8.65e+05	2.30	 6.68	0.0	0.0	0.0
+sBuOH + H = H2 + CH3CH2C[OH]CH3		4.14e+05	2.34	 2.68	0.0	0.0	0.0
+sBuOH + H = H2 + CH3CH2CH[OH]CH2	5.68e+06	2.21	 9.50	0.0	0.0	0.0
+sBuOH + H = H2 + CH3CH2CH[O]CH3		5.01e+04	2.64	10.15	0.0	0.0	0.0
+
+sBuOH + CH3 = CH4 + CH2CH2CH[OH]CH3	8.59e+00	3.62	11.43	0.0	0.0	0.0
+sBuOH + CH3 = CH4 + CH3CHCH[OH]CH3	1.21e+01	3.43	 9.58	0.0	0.0	0.0
+sBuOH + CH3 = CH4 + CH3CH2C[OH]CH3	3.89e+00	3.53	 6.01	0.0	0.0	0.0
+sBuOH + CH3 = CH4 + CH3CH2CH[OH]CH2	9.42e+00	3.60	11.05	0.0	0.0	0.0
+sBuOH + CH3 = CH4 + CH3CH2CH[O]CH3	1.53e-01	3.92	 7.89	0.0	0.0	0.0
+
+CH3 + HOCHC2H5 = sBuOH		1.0e14	-0.68	0.0	0.0	0.0	0.0
+//C2H5 + C2H5O-2 = sBuOH		4.8e13	-0.75	0.0	0.0	0.0	0.0
+C2H5 + C2H5O-2 = sBuOH		4e13	-0.75	0.0	0.0	0.0	0.0
+OH + C4H9-2 = sBuOH		1.4e13	-0.15	0.29	0.0	0.0	0.0
+CH3 + CH3CH[OH]CH2 = sBuOH	1.7e13	0.0	0.0	0.0	0.0	0.0
+
+//CH3 + HOCHC2H5 = sBuOH	2.0e+13	0.0	0.0	0.0	0.0	0.0
+//C2H5 + C2H5O-2 = sBuOH	2.0e+13	0.0	0.0	0.0	0.0	0.0
+//OH + C4H9-2 = sBuOH	2.0e+13	0.0	0.0	0.0	0.0	0.0
+//CH3 + CH3CH[OH]CH2 = sBuOH	2.0e+13	0.0	0.0	0.0	0.0	0.0

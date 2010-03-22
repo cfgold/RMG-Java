@@ -1,0 +1,22 @@
+// CFG from Glarborg
+
+Unit:
+A: mol/cm3/s
+E: cal/mol
+
+Reactions:
+
+
+
+// C1
+ CH2O (+M) = HCO + H (+M)                   8.0E15   0.000   87726  0.0 0.0 0.0  
+   LOW  /3.734E15 0.0 73479/                                
+ CH2O (+M) = CO + H2 (+M)                   3.7E13   0.000   71969  0.0 0.0 0.0  
+   LOW  /5.661E15 0.0 65849/                                
+
+
+
+// C2
+
+ OCHCHO (+M) = CO + CO + H2 (+M)              1.1E14   0.000   55000  0.0 0.0 0.0  
+   LOW  /2.6E16 0.0 38400/
